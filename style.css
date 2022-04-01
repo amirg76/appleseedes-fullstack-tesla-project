@@ -26,14 +26,25 @@ h2 {
   line-height: 1.2;
 }
 
-p {
+/* p {
   margin: 10px 0;
-}
-.header {
+} */
+header {
   background: url("https://tesla-cdn.thron.com/delivery/public/image/tesla/d0cecbbf-1a20-4b48-b136-fb096af19515/bvlatuR/std/2880x1800/model-3-main-hero-a-desktop")
     no-repeat center center/cover;
+}
+
+.header {
+  /* background: url("../img/model-3-main-hero-a-desktop.jpg") no-repeat center
+    center/cover; */
   position: relative;
-  z-index: 1;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  /* max-width: fit-content; */
 }
 
 .navbar {
@@ -51,6 +62,7 @@ p {
   font-size: 15px;
   font-weight: 600;
   margin-left: 10px;
+  /* background: transparent; */
 }
 .navbar .logo {
   font-size: 16px;
@@ -77,26 +89,141 @@ p {
   background-color: gray;
   border-radius: 25px;
   padding: 7px 20px;
-  transition: all 0.33s ease;
+  /* transition: all 0.33s ease-out; */
 }
 
 .navbar ul {
   display: flex;
 }
 
-/* Header Navbar */
+/* Header Navbar End*/
+
+/* Header Section */
 
 #header-section {
-  height: 100vh;
   position: relative;
-  /* z-index: 1; */
+  display: flex;
+
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+  flex-direction: column;
+  /* background-color: azure; */
+  width: 600px;
+  height: 100%;
+  color: #fff;
+  /* color: #333; */
 }
+.header-section__header {
+  position: relative;
+  /* align-self: center; */
+
+  font-size: 22px;
+  font-weight: 700;
+  margin-top: 80px;
+}
+.header-section_content {
+  /* background-color: aqua; */
+  width: 700px;
+  height: 150px;
+  display: flex;
+  align-content: flex-start;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  /* color: #333; */
+}
+.header-section_div_prop div {
+  /* color: #fff; */
+  font-size: 28px;
+}
+.header-section_div_prop p {
+  /* color: #fff; */
+  font-size: 14px;
+}
+.header-section_div_prop button {
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+  margin-top: 15px;
+  border-radius: 25px;
+  padding: 10px 50px;
+  border: 3px solid white;
+  background-color: transparent;
+  cursor: pointer;
+}
+.header-section_div_prop button:hover {
+  color: #333;
+  background-color: #fff;
+}
+.header-section_content_range {
+  /* margin-left: 50px; */
+}
+
+.chat_modal {
+  border-radius: 50%;
+  background-color: #fff;
+  padding: 10px;
+
+  position: fixed;
+  right: 30px;
+  top: 87%;
+}
+.chat_modal_button svg {
+}
+
 /* Media Query */
+
 @media (max-width: 1200px) {
   .nav-middle li {
     display: none;
   }
   .responsive-menu-hidden {
     display: none;
+  }
+}
+@media (max-width: 768px) {
+  .header {
+    /* justify-content: flex-start; */
+  }
+  #header-section {
+    /* width: 500px; */
+    /* justify-content: center; */
+    /* background-color: aqua; */
+    /* flex-direction: row; */
+  }
+  .header-section_content {
+    /* background-color: aqua; */
+
+    /* border: 3px solid; */
+    max-width: 300px;
+    height: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: flex-start;
+    flex-wrap: wrap;
+  }
+  .header-section_div_prop {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    flex-basis: 33.3%;
+  }
+  .header-section_div_prop div {
+    font-size: 22px;
+  }
+  .header-section_div_prop p {
+    color: #fff;
+    font-size: 10px;
+  }
+  .header-section_div_prop button {
+    padding: 10px 100px;
+  }
+  .header-section_content_button {
+    flex-basis: 100%;
   }
 }
