@@ -172,6 +172,24 @@ header {
 .chat_modal_button svg {
 }
 
+/* Main Section */
+
+/* Tesla Safety Section */
+.tesla_safety {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 600px;
+}
+.tesla_safety_img {
+  background: url("https://tesla-cdn.thron.com/delivery/public/image/tesla/ea753653-02a2-4206-aac5-82a33a0a245d/bvlatuR/std/2880x1800/model-3-hero-a-desktop")
+    no-repeat center center/cover;
+  width: 100%;
+  height: 100%;
+}
+.tesla_safety_content {
+}
+
 /* Media Query */
 
 @media (max-width: 1200px) {
