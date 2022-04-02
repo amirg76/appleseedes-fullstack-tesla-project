@@ -7,9 +7,68 @@
 }
 body {
   font-family: "Open Sans", sans-serif;
+  /* @font-face {
+    font-display: swap;
+    font-family: Gotham SSm;
+    font-style: normal;
+    font-weight: 500;
+    src: url(https://cdn-design.tesla.com/tds-fonts/3.x/woff2/GothamSSm-Medium_Web.woff2)
+      format("woff2");
+  }
+  @font-face {
+    font-display: swap;
+    font-family: Gotham SSm;
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://cdn-design.tesla.com/tds-fonts/3.x/woff2/GothamSSm-Book_Web.woff2)
+      format("woff2");
+  }
+
+  @font-face {
+    font-display: swap;
+    font-family: Gotham SSm;
+    font-style: normal;
+    font-weight: 700;
+    src: url(https://cdn-design.tesla.com/tds-fonts/3.x/woff2/GothamSSm-Bold_Web.woff2)
+      format("woff2");
+  }
+  @font-face {
+    font-display: swap;
+    font-family: Gotham SSm;
+    font-style: normal;
+    font-weight: 300;
+    src: url(https://cdn-design.tesla.com/tds-fonts/3.x/woff2/GothamSSm-Light_Web.woff2)
+      format("woff2");
+  }
+  @font-face {
+    font-display: swap;
+    font-family: Gotham SSm;
+    font-style: normal;
+    font-weight: 200;
+    src: url(https://cdn-design.tesla.com/tds-fonts/3.x/woff2/GothamSSm-XLight_Web.woff2)
+      format("woff2");
+  } */
   line-height: 1.6;
 }
+/* UTILETIS */
 
+/* Buttons */
+
+.order_now_button {
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+  margin-top: 15px;
+  border-radius: 25px;
+  padding: 10px 50px;
+  border: 3px solid white;
+  background-color: transparent;
+  cursor: pointer;
+}
+.order_now_button:hover {
+  color: #333;
+  background-color: #fff;
+}
 /* Header Navbar */
 ul {
   list-style: none;
@@ -26,9 +85,6 @@ h2 {
   line-height: 1.2;
 }
 
-/* p {
-  margin: 10px 0;
-} */
 header {
   background: url("https://tesla-cdn.thron.com/delivery/public/image/tesla/d0cecbbf-1a20-4b48-b136-fb096af19515/bvlatuR/std/2880x1800/model-3-main-hero-a-desktop")
     no-repeat center center/cover;
@@ -103,27 +159,21 @@ header {
 #header-section {
   position: relative;
   display: flex;
-
   align-items: center;
   align-content: center;
   justify-content: space-between;
   flex-direction: column;
-  /* background-color: azure; */
   width: 600px;
   height: 100%;
   color: #fff;
-  /* color: #333; */
 }
 .header-section__header {
   position: relative;
-  /* align-self: center; */
-
   font-size: 22px;
   font-weight: 700;
   margin-top: 80px;
 }
 .header-section_content {
-  /* background-color: aqua; */
   width: 700px;
   height: 150px;
   display: flex;
@@ -131,40 +181,18 @@ header {
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-  /* color: #333; */
 }
 .header-section_div_prop div {
-  /* color: #fff; */
   font-size: 28px;
 }
 .header-section_div_prop p {
-  /* color: #fff; */
   font-size: 14px;
 }
-.header-section_div_prop button {
-  color: #fff;
-  font-size: 12px;
-  font-weight: 600;
-  margin-top: 15px;
-  border-radius: 25px;
-  padding: 10px 50px;
-  border: 3px solid white;
-  background-color: transparent;
-  cursor: pointer;
-}
-.header-section_div_prop button:hover {
-  color: #333;
-  background-color: #fff;
-}
-.header-section_content_range {
-  /* margin-left: 50px; */
-}
-
 .chat_modal {
   border-radius: 50%;
   background-color: #fff;
   padding: 10px;
-
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.5);
   position: fixed;
   right: 30px;
   top: 87%;
@@ -178,18 +206,95 @@ header {
 .tesla_safety {
   display: flex;
   justify-content: space-between;
+  align-content: center;
   align-items: center;
-  height: 600px;
+  height: 100vh;
 }
 .tesla_safety_img {
   background: url("https://tesla-cdn.thron.com/delivery/public/image/tesla/ea753653-02a2-4206-aac5-82a33a0a245d/bvlatuR/std/2880x1800/model-3-hero-a-desktop")
     no-repeat center center/cover;
   width: 100%;
   height: 100%;
+  flex-basis: 80%;
 }
 .tesla_safety_content {
+  display: flex;
+  justify-content: space-between;
+  align-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  flex-basis: 19%;
+  height: 100%;
+  font-weight: 100;
+}
+.tesla_safety_content_headers {
+  padding-top: 50px;
+  flex-basis: 5%;
+}
+.tesla_safety_content_headers span:nth-child(2) {
+  display: block;
+  font-weight: 600;
+  font-size: 30px;
 }
 
+.tesla_safety_content_text {
+  flex-basis: 70%;
+  font-size: 15px;
+  font-weight: 100px;
+  letter-spacing: 1px;
+  padding-right: 15px;
+  line-height: 1.4;
+  color: #53575e;
+}
+.tesla_safety_content_text h4 {
+  margin-top: 10px;
+}
+.tesla_safety_content_text span {
+  text-decoration: underline;
+}
+.tesla_safety_content_buttons {
+  display: flex;
+  justify-content: space-evenly;
+  align-content: center;
+  align-items: center;
+  flex-basis: 15%;
+  width: 100%;
+}
+.tdl-icon--round {
+  border: 3px solid var(--tcl-icon--border-color);
+  border-radius: 20px;
+}
+.tds-icon {
+  background: transparent;
+  block-size: 40px;
+  content: "";
+  display: block;
+  inline-size: 40px;
+  max-inline-size: 100%;
+  min-block-size: 40px;
+  min-inline-size: 40px;
+  overflow: hidden;
+  text-indent: -9999px;
+  transition: color 0.33s ease;
+}
+.tcl-icon--round {
+  border: 3px solid var(--tcl-icon--border-color);
+  border-radius: 20px;
+}
+
+.tesla_safety_content_buttons_learn {
+  display: flex;
+  font-size: 12px;
+  margin-right: 12px;
+}
+.tesla_safety_content_buttons .order_now_button {
+  color: #333;
+  border-color: #333;
+}
+.tesla_safety_content_buttons .order_now_button:hover {
+  background-color: black;
+  color: #fff;
+}
 /* Media Query */
 
 @media (max-width: 1200px) {
@@ -199,21 +304,43 @@ header {
   .responsive-menu-hidden {
     display: none;
   }
+  .tesla_safety {
+    flex-direction: column;
+  }
+  .tesla_safety_content {
+    justify-content: space-between;
+    align-content: flex-start;
+    align-items: flex-start;
+    flex-direction: row;
+    max-width: 90%;
+    height: 100%;
+    /* background-color: aqua; */
+    flex-wrap: wrap-reverse;
+  }
+  .tesla_safety_content_headers {
+    /* background-color: blanchedalmond; */
+    padding: 0 10px;
+    order: 2;
+    height: 0%;
+    flex-basis: 35%;
+  }
+  .tesla_safety_content_buttons {
+    /* background-color: cadetblue; */
+    order: 0;
+    flex-basis: 40%;
+    height: 100%;
+  }
+  .tesla_safety_content_text {
+    /* background-color: cadetblue; */
+    flex-basis: 60%;
+    order: 1;
+    height: 100%;
+    padding: 0 10px;
+    letter-spacing: 0.5px;
+  }
 }
 @media (max-width: 768px) {
-  .header {
-    /* justify-content: flex-start; */
-  }
-  #header-section {
-    /* width: 500px; */
-    /* justify-content: center; */
-    /* background-color: aqua; */
-    /* flex-direction: row; */
-  }
   .header-section_content {
-    /* background-color: aqua; */
-
-    /* border: 3px solid; */
     max-width: 300px;
     height: 200px;
     display: flex;
@@ -243,5 +370,42 @@ header {
   }
   .header-section_content_button {
     flex-basis: 100%;
+  }
+  .tesla_safety {
+    flex-direction: column;
+  }
+
+  .tesla_safety_content {
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-basis: 100%;
+    height: 100%;
+    flex-wrap: nowrap;
+  }
+  .tesla_safety_content_headers {
+    /* background-color: blanchedalmond; */
+    padding: 0 0px;
+    order: 0;
+    flex-basis: 15%;
+    align-self: flex-start;
+  }
+  .tesla_safety_content_buttons {
+    /* background-color: cadetblue; */
+    order: 2;
+    flex-basis: 20%;
+    align-self: flex-start;
+  }
+  .tesla_safety_content_text {
+    /* background-color: cadetblue; */
+    flex-basis: 30%;
+    order: 1;
+    height: 100%;
+    padding: 0 0px;
+    letter-spacing: 0.5px;
+  }
+  .tesla_safety_content_buttons .order_now_button {
+    padding: 10px 100px;
   }
 }
