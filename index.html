@@ -4,16 +4,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-   
+
     <link rel="stylesheet" href="normalize.css" />
     <link rel="stylesheet" href="style.css" />
     <title>Tesla Project</title>
   </head>
   <body>
-    <!--  HEADER -->
+    <!--  header -->
     <header class="header">
-      <!-- <div > -->
-      <!-- <nav> -->
       <div id="navbar" class="navbar">
         <h1 class="logo">
           <svg
@@ -35,6 +33,7 @@
           <li><a href="#">Model Y</a></li>
           <li><a href="#">Solar Roof</a></li>
           <li><a href="#">Solar Panels</a></li>
+          <div class="animation start-home"></div>
         </ul>
 
         <ul class="nav-right">
@@ -43,7 +42,7 @@
           <li class="responsive-menu"><a href="#">Menu</a></li>
         </ul>
       </div>
-      <!-- </nav> -->
+
       <section id="header-section">
         <div class="header-section__header"><h1>Model 3</h1></div>
         <div class="header-section_content">
@@ -60,63 +59,133 @@
           <section class="header-section_div_prop header-section_content_duel">
             <div>AWD</div>
             <p>Dual Motor</p>
-           </section>
+          </section>
 
-          <section class="header-section_div_prop header-section_content_button">
+          <section
+            class="header-section_div_prop header-section_content_button"
+          >
             <button class="order_now_button">ORDER NOW</button>
           </section>
+        </div>
       </section>
-    </div>
-    <div class="chat_modal">
-      <button class="chat_modal_button">
-        <svg width="28" height="26" xmlns="http://www.w3.org/2000/svg" class="tw-chat--avaya-chat__image"><g fill="#171A20"><path d="M23.8.85H4.2A3.85 3.85 0 00.35 4.7v12.6l.007.235A3.85 3.85 0 004.2 21.15h3.15v2.859c0 .332.117.653.33.907l.122.13c.515.478 1.317.51 1.87.047l4.709-3.943H23.8a3.85 3.85 0 003.85-3.85V4.7A3.85 3.85 0 0023.8.85zM4.2 2.95h19.6c.966 0 1.75.784 1.75 1.75v12.6a1.75 1.75 0 01-1.75 1.75h-9.927a.7.7 0 00-.45.163L9.45 22.54v-2.79a.7.7 0 00-.7-.7H4.2a1.75 1.75 0 01-1.75-1.75V4.7c0-.966.784-1.75 1.75-1.75z"></path><path d="M14 9.6a1.4 1.4 0 110 2.8 1.4 1.4 0 010-2.8zm-5.6 0a1.4 1.4 0 110 2.8 1.4 1.4 0 010-2.8zm11.2 0a1.4 1.4 0 110 2.8 1.4 1.4 0 010-2.8z"></path></g></svg>
-      </button>
-    </div>
+
+      <div class="chat_modal">
+        <button class="chat_modal_button">
+          <svg
+            width="28"
+            height="26"
+            xmlns="http://www.w3.org/2000/svg"
+            class="tw-chat--avaya-chat__image"
+          >
+            <g fill="#171A20">
+              <path
+                d="M23.8.85H4.2A3.85 3.85 0 00.35 4.7v12.6l.007.235A3.85 3.85 0 004.2 21.15h3.15v2.859c0 .332.117.653.33.907l.122.13c.515.478 1.317.51 1.87.047l4.709-3.943H23.8a3.85 3.85 0 003.85-3.85V4.7A3.85 3.85 0 0023.8.85zM4.2 2.95h19.6c.966 0 1.75.784 1.75 1.75v12.6a1.75 1.75 0 01-1.75 1.75h-9.927a.7.7 0 00-.45.163L9.45 22.54v-2.79a.7.7 0 00-.7-.7H4.2a1.75 1.75 0 01-1.75-1.75V4.7c0-.966.784-1.75 1.75-1.75z"
+              ></path>
+              <path
+                d="M14 9.6a1.4 1.4 0 110 2.8 1.4 1.4 0 010-2.8zm-5.6 0a1.4 1.4 0 110 2.8 1.4 1.4 0 010-2.8zm11.2 0a1.4 1.4 0 110 2.8 1.4 1.4 0 010-2.8z"
+              ></path>
+            </g>
+          </svg>
+        </button>
+      </div>
     </header>
-    <!--  HEADER END-->
+    <!--  header END-->
 
     <!-- Main Section -->
     <main>
       <section class="tesla_safety">
         <div class="tesla_safety_img"></div>
         <div class="tesla_safety_content">
-        
-        <span class="tesla_safety_content_headers">
-          <span>Safety</span>
-          <span>Built for Safety</span>
-        </span>
-        <div class="tesla_safety_content_text">
-          <p>Safety is the most important part of every Tesla. We design our vehicles to <span> exceed safety standards.</span></p>
-          <h4>5-Star Rating</h4>
-          <p>Model 3 achieved NHTSA 5-star safety ratings in every category and subcategory.</p>
-          <h4>Top Safety Pick+</h4>
-          <p>Model 3 received the IIHS Top Safety Pick+ award, with top ratings in all crashworthiness and front crash prevention categories.</p>
-        </div>
-        
+          <span class="tesla_safety_content_headers">
+            <span>Safety</span>
+            <span>Built for Safety</span>
+          </span>
+          <div class="tesla_safety_content_text">
+            <p>
+              Safety is the most important part of every Tesla. We design our
+              vehicles to <span> exceed safety standards.</span>
+            </p>
+            <h4>5-Star Rating</h4>
+            <p>
+              Model 3 achieved NHTSA 5-star safety ratings in every category and
+              subcategory.
+            </p>
+            <h4>Top Safety Pick+</h4>
+            <p>
+              Model 3 received the IIHS Top Safety Pick+ award, with top ratings
+              in all crashworthiness and front crash prevention categories.
+            </p>
+          </div>
 
-        <div class="tesla_safety_content_buttons">
-          <button class="tesla_safety_content_buttons_learn">
-            <svg class="tds-icon tcl-icon tcl-icon--round tcl-showcase__drawer-open-button-svg" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
-              <use xlink:href="#tcl-icon-plus--small"></use>
-            </svg>
-            LERN MORE
-          </button>
-          <button class="order_now_button">ORDER NOW</button>
+          <div class="tesla_safety_content_buttons">
+            <span class="learn_more_button"> LERN MORE </span>
+            <button class="order_now_button">ORDER NOW</button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Main Section End -->
+
+    <!-- header Section -->
+    <section id="mountain-section">
+      <div class="mountain-section_content">
+        <section class="mountain-section_div_prop header-section_content_mph">
+          <div>3.1 s</div>
+          <p class="mountain_section_content_show-p">
+            Quickest acceleration—from zero to 60 mph* in as little as 3.1
+            seconds
+          </p>
+          <p class="mountain_section_content_blind-p">0-60 mph*</p>
+        </section>
+
+        <section class="mountain-section_div_prop header-section_content_range">
+          <div>162 mph</div>
+          <p class="mountain_section_content_show-p">
+            Improved handling and aerodynamics allow for a top speed of 162 mph
+          </p>
+          <p class="mountain_section_content_blind-p">Top Speed</p>
+        </section>
+
+        <section
+          class="mountain-section_div_prop mountain-section_content_duel"
+        >
+          <div>AWD</div>
+          <p class="mountain_section_content_show-p">
+            Dual Motor All-Wheel Drive instantly controls traction and torque,
+            in all weather conditions
+          </p>
+          <p class="mountain_section_content_blind-p">Dual Motor</p>
+        </section>
+      </div>
+    </section>
+
+    <!-- Performance Section -->
+    <section id="performance">
+      <div class="performance_content">
+        <div class="performance_content_headers_box">
+          <span class="performance_content_headers">
+            <span>Performance</span>
+            <span>Quickest Acceleration</span>
+          </span>
+        </div>
+        <div class="performance_content_buttons_box">
+          <div class="performance_content_buttons">
+            <span class="learn_more_button"> LERN MORE </span>
+            <button class="order_now_button">ORDER NOW</button>
+          </div>
+        </div>
+        <div class="performance_content_text_box">
+          <div class="performance_content_text">
+            <p>
+              Model 3 comes with the option of dual motor all-wheel drive, 20”
+              Überturbine Wheels and Performance Brakes for total control in all
+              weather conditions. A carbon fiber spoiler improves stability at
+              high speeds, all allowing Model 3 to accelerate from 0-60 mph* in
+              as little as 3.1 seconds.
+            </p>
+          </div>
         </div>
       </div>
-      </section>
-
-    <!-- <picture class="tcl-image__picture" data-alt="Model 3 safety hero image" data-class="tds-asset-fallback tcl-asset tcl-image__asset tcl-objectfit-position tcl-objectfit-position--center" data-iesrc="https://tesla-cdn.thron.com/delivery/public/image/tesla/ea753653-02a2-4206-aac5-82a33a0a245d/bvlatuR/std/2880x1800/model-3-hero-a-desktop">
-      <source srcset="https://tesla-cdn.thron.com/delivery/public/image/tesla/353f33e4-b4f5-4e4d-9d4e-edbf0e4f7d33/bvlatuR/std/800x950/model-3-hero-a-mobile" media="(max-width: 599px) and (orientation: portrait)">
-<source srcset="https://tesla-cdn.thron.com/delivery/public/image/tesla/ea753653-02a2-4206-aac5-82a33a0a245d/bvlatuR/std/2880x1800/model-3-hero-a-desktop" media="(max-width: 899px) and (orientation: landscape)">
-        <source srcset="https://tesla-cdn.thron.com/delivery/public/image/tesla/ea753653-02a2-4206-aac5-82a33a0a245d/bvlatuR/std/2880x1800/model-3-hero-a-desktop" media="(min-width: 600px) and (orientation:portrait)">
-  <source srcset="https://tesla-cdn.thron.com/delivery/public/image/tesla/ea753653-02a2-4206-aac5-82a33a0a245d/bvlatuR/std/2880x1800/model-3-hero-a-desktop" media="(min-width: 900px) and (orientation: landscape)">
-<img src="https://tesla-cdn.thron.com/delivery/public/image/tesla/ea753653-02a2-4206-aac5-82a33a0a245d/bvlatuR/std/2880x1800/model-3-hero-a-desktop" srcset="https://tesla-cdn.thron.com/delivery/public/image/tesla/ea753653-02a2-4206-aac5-82a33a0a245d/bvlatuR/std/2880x1800/model-3-hero-a-desktop" alt="Model 3 safety hero image" class="tds-asset-fallback tcl-asset tcl-image__asset tcl-objectfit-position tcl-objectfit-position--center">
-</picture> -->
-    
-      </main>
-       <!-- Main Section End -->
-
-    
+    </section>
   </body>
 </html>
