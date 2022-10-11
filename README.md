@@ -1,4 +1,4 @@
-# tesla-mockup-project
+# Tesla-Mockup-Project
 
 <img src="img/screen-shots/model3-page.png" width="500">
 <img src="img/screen-shots/built-for-safety-page.png" width="500">
